@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: calc(100vh);
+            display: grid;
+          
+            grid-template-rows: 60px 1fr 60px;
+
+
+
+        }
+
+        .item {
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .item1 {
+            background-color: black;
+            color: white;
+
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .footer {
+            color: white;
+            background-color: black;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="item item1">
+            <h1>this is header</h1>
+        </nav>
+        <div class="item"><h1>main</h1></div>
+        
+        <footer class="item footer">
+            <h1>footer</h1>
+        </footer>
+
+    </div>
+</body>
+
+</html>
